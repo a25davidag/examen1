@@ -84,7 +84,6 @@ public class Main {
     public static int factorial(int n) {
         int result = 1;
         for (int i = n; i > 1; i--) {
-            n = n * (i - 1);
             result = result * i;
         }
         return result;
@@ -101,7 +100,7 @@ public class Main {
         int suma = 0;
         for (int i = 0; i < numeros.length; i++) {
             if (numeros[i] > 0) {
-                suma += numeros[i];
+                suma = suma + numeros[i];
             }
         }
         return suma;
